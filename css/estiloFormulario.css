@@ -1,0 +1,129 @@
+/*link para a importação de fontes*/
+/*@import url ('https://fonts.googleapis.com/css2? family = Merriweather: wght @ 300 & display = swap');*/
+
+*{
+    margin:0;
+    border: 0;
+    padding: 0;
+    /*font-family: sans-serif;*/
+}
+
+
+/*utilização da pseudo-classe root*/
+:root{
+    --lav: #b8abd4;
+    --pur: #9583b6;
+    --fonte-padrão: Arial, sans serif; 
+    --fonte-destaque: 'Merriweather', serif;
+}
+
+/*definindo a cor do body background*/
+body{
+    background-color: var(--lav);
+
+}
+
+/*aplicando css na tag semântica section*/
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px
+}
+
+/*estilizando o formulário*/
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*deifindo a estilização dos inputs*/
+input.inp{
+    width: 60vw;
+    max-width: 450px;
+    outline: none;
+    padding: 5px 30px;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    border: 2px solid #9583b6;
+    /*margin-bottom: 10px;*/
+}
+/*estilização dos botões de submit e reset*/
+input.botao{
+    font-size: 20px;
+    background-color: var(--pur);
+    color: black;
+    padding: 10px;
+    margin: 0 0 10px 0;
+    border: 2px solid #9583b6;
+
+}
+
+/*estilizando o select estado e cidade*/
+select.esc{
+    font-size: 20px;
+    padding: 10px;
+    margin: 0 0 10px 0;
+    border: 2px solid #9583b6;
+   
+}
+/*estilização do cabeçalho*/
+header{
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    display: flex;
+    /*padding: 10px;*/
+    /*box-shadow: 0px 5px 20px;*/
+    /*justify-content: space-between;*/
+}
+
+/*estilização da tag semântica nav*/
+nav{
+    width: 100%;
+    height: 70px;
+    background-color: purple;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*estilização da classe menu*/
+.menu{
+    list-style: none;
+    display: flex;
+}
+
+
+/*estilização a lista presente no menu*/
+.menu li a{
+    color: black;
+    display: block;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+   /* align-items: center ;*/
+   font-size: 30px; 
+}
+
+/*estilização da logo*/
+.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+/*estilizando o footer*/
+footer{
+    width: 100%;
+    height: 70px;
+    background-color: purple;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!-- (pt-br) definição da linguagem do conteúdo da página-->
+<html lang="pt-br">
+<head>
+    <!--definição do conjunto de caracteres especiais-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--controle das dimensões da página para design responsivo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--definição do css externo-->
+    <link rel="stylesheet" type="text/css" href="css/estiloFormulario.css">
+    <title>criar conta</title>
+</head>
+<body>
+    <!--cabeçalho utilizando a tag estrutural header que possui importante valor semântico juntamente com o h1-->
+    <header>
+        <div class="logo">
+            <figure>
+                <img src="imgVR/logohextech.png" alt="logomarca">
+            </figure>
+        </div>
+    </header>
+
+    <!-- menu utilizando a tag estrutural nav e a lista desordenada do tipo circle-->
+    <nav>
+        <div class="nav1">
+            <ul class="menu"> 
+                <li><a href="index.html" target="_self">home</a></li>
+                <li><a href="formulario1.html" target="_self">cadastro</a></li>
+                <li><a href="compra1.html" target="_self">produtos</a></li>
+                
+            </ul> 
+        </div>
+        
+    </nav>
+
+    <!--utilização da tag section-->
+    <section>
+        <!--Form com action para chamar um arquivo e method para selecionar o método de envio desses dados-->
+        <form action="" method="">
+            <!--nome-->
+            <input type="text" id="nome" class="inp" placeholder="nome completo">
+            <!--email-->
+            <input type="email" id="email" class="inp" required name="email" placeholder="email">
+            <!--número de telefone-->
+            <input type="text" id="text" class="inp" placeholder="( ) XXXXX-XXXX">
+            <!--data de nascimento-->
+            <input type="date" id="DataNascimento" class="inp" name="DataNascimento">
+            <!--definir senha-->
+            <input type="password" id="senha1" class="inp" placeholder="senha">
+            <!--confirmar senha-->
+            <input type="password" id="senha2" class="inp" placeholder="confirmar senha">
+
+            <!--definir estado com select e option-->
+            <select id="Estado" class="esc" name="Estado">
+                <option value="">selecione seu estado</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+
+            <!--definir cidade com select e option-->
+            <select id="cidade" class="esc" name="cidade">
+                <option value="">selecione sua cidade</option>
+                <option value="AC">Rio Branco</option>
+                <option value="AL">Naceió</option>
+                <option value="AP">Macapá</option>
+                <option value="AM">Manaus</option>
+                <option value="BA">Salvador</option>
+                <option value="CE">Fortaleza</option>
+                <option value="DF">Brasília</option>
+                <option value="ES">Vitória</option>
+                <option value="GO">Goiânia</option>
+                <option value="MA">São Luis</option>
+                <option value="MT">Cuiabá</option>
+                <option value="MS">Campo Grande</option>
+                <option value="MG">Belo Horizonte</option>
+                <option value="PA">Belém</option>
+                <option value="PB">João Pessoa</option>
+                <option value="PR">Curitiba</option>
+                <option value="PE">Recife</option>
+                <option value="PI">Teresina</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Natal</option>
+                <option value="RS">Porto Alegre</option>
+                <option value="RO">Porto Velho</option>
+                <option value="RR">Boa Vista</option>
+                <option value="SC">Florianópolis</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Aracaju</option>
+                <option value="TO">Palmas</option>
+            </select>
+
+
+            <!--botões: enviar e redefinir do tipo type submit e reset-->
+            <input type="submit" class="botao"></input>
+            <input type="reset" class="botao"></input>
+
+        </form>
+
+    </section>
+
+
+    <!--deginindo o informações do footer-->
+    <footer>
+        <p>
+            País Brasil// 55700000// Hextech Corp // CNPJ112358
+        </p>
+    </footer>
+    
+</body>
+</html>
